@@ -1,9 +1,10 @@
-import { AddNoteToBudgetCommand } from './add-note.command';
-import { AddNoteToBudgetHandler } from './add-note.handler';
+// Use CommonJS require instead of import
+const { AddNoteToBudgetCommand } = require('./add-note.command');
+const { AddNoteToBudgetHandler } = require('./add-note.handler');
 
 // Fake repository for testing
 const fakeRepository = {
-  addNote: async (note: any) => {
+  addNote: async (note) => {
     console.log('Note saved:', note);
   },
 };
@@ -19,8 +20,11 @@ const command = new AddNoteToBudgetCommand(
 );
 
 // Execute handler
-handler.execute(command).then(() => {
-  console.log('Command executed successfully');
-}).catch(err => {
-  console.error('Error:', err.message);
-});
+handler.execute(command)
+  .then(() => {
+    console.log('Command executed successfully');
+  })
+  .catch(err => {
+    console.error('Error:', err.message);
+  });
+
