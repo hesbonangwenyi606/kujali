@@ -1,6 +1,6 @@
-const { AddNoteToBudgetCommand } = require('./add-note.command');
+import { AddNoteToBudgetCommand } from './add-note.command.js';
 
-class AddNoteToBudgetHandler {
+export class AddNoteToBudgetHandler {
   constructor(repository) {
     this.repository = repository;
   }
@@ -14,4 +14,3 @@ class AddNoteToBudgetHandler {
   }
 }
 
-module.exports = { AddNoteToBudgetHandler };
