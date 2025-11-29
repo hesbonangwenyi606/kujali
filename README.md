@@ -127,8 +127,7 @@ Adding a web application to a Firebase project is a simple process that can be c
 3. Select the account you want to fork the repository to (Once the fork is complete, you will be redirected to your newly forked repository.)
 4. Clone the forked repository to your local machine by copying the "clone" URL and running "git clone [URL]" in your command line.
 
-```
-
+`
 ```bash
   git clone git@github.com:italanta/kujali.git
 ```
