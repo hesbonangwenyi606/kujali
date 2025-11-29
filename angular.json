@@ -77,6 +77,7 @@
     "functions-pubsub": "libs/functions/pubsub",
     "kujali": "apps/kujali",
     "kujali-functions": "apps/kujali-functions",
+    "model-budgetting-notes-budget-notes": "libs/model/budgetting/notes/budget-notes",
     "model-data-db": "libs/model/data/db",
     "model-finance-accounts-main": "libs/model/finance/accounts/main",
     "model-finance-activities-base": "libs/model/finance/activities/base",
